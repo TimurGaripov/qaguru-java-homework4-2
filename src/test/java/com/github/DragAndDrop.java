@@ -14,5 +14,6 @@ public class DragAndDrop {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").dragAndDropTo("#column-b");
         $$("#columns").first().shouldHave(text("B"));
+        $$("#columns").last().shouldHave(text("A"));
     }
 }
